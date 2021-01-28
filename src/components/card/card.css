@@ -35,7 +35,7 @@
   margin: 0;
   font-weight: 700;
   text-align: center;
-  color: #4a4b4d;
+  color: var(--primary-font-color);
 }
 
 .card-container::-webkit-scrollbar {
