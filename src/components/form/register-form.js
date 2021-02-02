@@ -4,11 +4,9 @@ export function createRegisterForm() {
   const form = document.createElement("form");
   form.className = "form";
 
-  const text = document.write("p");
-  text.paragraph = "please click here";
-
   const button = document.createElement("button");
   button.innerText = "Register!";
+  button.className = "btn";
 
   function register() {
     alert("Successfully registered!");
@@ -17,9 +15,18 @@ export function createRegisterForm() {
   button.addEventListener("click", register);
 
   const title = document.createElement("h2");
-  title.InnerText = "Reset Password";
+  title.innerText = "Reset password";
 
-  form.append(title, button);
+  const text = document.createElement("p");
+  text.innerText =
+    "Please enter your email to receive a link to create a new password";
+
+  const input = document.createElement("input");
+  input.type = "text";
+  input.placeholder = "Email";
+  input.className = "input";
+
+  form.append(title, text, input, button);
 
   return form;
 }

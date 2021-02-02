@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 
+@-ms-viewport {
+  width: device-width;
+}
+
 *,
 *::after,
 *::before {
@@ -29,8 +33,24 @@ textarea {
   --primary-font-color: #4a4b4d;
   --input-background-color: #f2f2f2;
   --input-placeholder-color: #f2f2f2;
+  --link-color: #fc6011;
+  --title-font-size: 25px;
+  --p-font-size: 16px;
 }
 
 body {
   font-family: "Quicksand", sans-serif;
+}
+
+a,
+a:visited,
+a:active {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+  text-decoration: none;
+  color: red;
 }
