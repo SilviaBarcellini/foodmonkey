@@ -1,12 +1,34 @@
+/*html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+*/
+
+.card-container {
+  display: grid;
+  grid-auto-flow: column;
+  /*box-sizing: border-box;*/
+  border: none;
+  overflow-x: auto;
+  justify-content: start;
+}
+
 .card {
+  display: flex;
+  flex-direction: column;
   width: 100px;
+  margin: 12px;
 }
 
 .card-img {
   object-fit: cover;
   border-radius: 20px;
-  width: 100%;
-  height: 100%;
+  width: 100px;
+  height: 100px;
 }
 
 .card-text {
@@ -14,4 +36,8 @@
   font-weight: 700;
   text-align: center;
   color: #4a4b4d;
+}
+
+.card-container::-webkit-scrollbar {
+  display: none;
 }
