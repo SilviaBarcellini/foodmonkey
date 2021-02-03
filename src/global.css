@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 
 *,
 *::after,
@@ -21,5 +21,16 @@ select,
 optgroup,
 textarea {
   margin: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+:root {
+  --main-color: #fc6011;
+  --primary-font-color: #4a4b4d;
+  --input-background-color: #f2f2f2;
+  --input-placeholder-color: #f2f2f2;
+}
+
+body {
   font-family: "Quicksand", sans-serif;
 }
