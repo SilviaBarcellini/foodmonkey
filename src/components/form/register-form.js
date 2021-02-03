@@ -5,7 +5,7 @@ export function createRegisterForm() {
   form.className = "form";
 
   const button = document.createElement("button");
-  button.innerText = "Confirm";
+  button.innerText = "Send";
   button.className = "btn";
 
   function register() {
