@@ -1,3 +1,12 @@
+function createOtpInputElement() {
+  const otp = document.createElement("input");
+  otp.type = "password";
+  otp.placeholder = "*";
+  otp.className = "input";
+
+  return otp;
+}
+
 import { verify } from "./form.stories";
 
 export function createVerifyForm() {
@@ -10,32 +19,17 @@ export function createVerifyForm() {
   const text = document.createElement("p");
   text.innerText = "Please check your mobile number 071*****12!";
 
-  const otpOne = document.createElement("input");
-  otpOne.type = "password";
-  otpOne.placeholder = "*";
-  otpOne.className = "input";
-
-  const otpTwo = document.createElement("input");
-  otpTwo.type = "password";
-  otpTwo.placeholder = "*";
-  otpTwo.className = "input";
-
-  const otpThree = document.createElement("input");
-  otpThree.type = "password";
-  otpThree.placeholder = "*";
-  otpThree.className = "input";
-
-  const otpFour = document.createElement("input");
-  otpFour.type = "password";
-  otpFour.placeholder = "*";
-  otpFour.className = "input";
+  const otpOne = createOtpInputElement();
+  const otpTwo = createOtpInputElement();
+  const otpThree = createOtpInputElement();
+  const otpFour = createOtpInputElement();
 
   const otpContainer = document.createElement("div");
   otpContainer.className = "form-otp";
   otpContainer.append(otpOne, otpTwo, otpThree, otpFour);
 
   const button = document.createElement("button");
-  button.innerText = "Confirm";
+  button.innerText = "Next";
   button.className = "btn";
 
   const hint = document.createElement("p");

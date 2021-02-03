@@ -2,12 +2,14 @@
   display: grid;
   grid-row-gap: 1em;
   text-align: center;
-  align-content: center;
+  justify-items: center;
 }
 
 .verify {
-  text-align: center;
+  display: grid;
+  place-content: center;
 }
+
 .form-hint a {
   margin-left: 0.5em;
 }
