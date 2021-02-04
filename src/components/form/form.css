@@ -14,7 +14,7 @@
   margin-left: 0.5em;
 }
 
-.form-otp {
+.form_otp {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
@@ -24,13 +24,21 @@
   grid-row-gap: 1em;
 }
 
-.form-otp input {
-  width: 2.8em;
-  height: 2.8em;
-  padding: 1em;
-  margin: 0.5em;
+.input {
+  width: 25px;
+  height: 25px;
+  padding: 30px;
+  margin: 10px;
+  background-color: var(--input-background-color);
+  color: var(--primary-font-color);
+  border-radius: 20px;
+  border: none;
 }
 
-.resend-link {
+.resend_link {
   color: var(--link-color);
+}
+
+.h5 {
+  color: rgb(255, 81, 0);
 }
